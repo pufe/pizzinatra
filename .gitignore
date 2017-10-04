@@ -1,0 +1,5 @@
+# ignores database files
+db/
+
+# ignores emacs backup files
+*~
