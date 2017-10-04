@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Quero Pítiça!</title>
+  </head>
+  <body>
+    <h1>Hoje é dia de felicidade, dia de pítiça</h1>
+    <form action="/pedido" method="post">
+      <label>Meu nome é</label>
+      <input type="text" name="name">
+      <label>, eu quero pizza de</label>
+      <input type="text" name="first_pizza">
+      <label>e de:</label>
+      <input type="text" name="second_pizza">
+      <br>
+      <input type="submit" value="Confirmar!">
+    </form>
+    <% if errors %>
+      <div>
+        <% errors.each do |error| %>
+          <%= error %>
+          <br>
+        <% end %>
+      </div>
+    <% end %>
+  </body>
+</head>

@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>Pedido realizado!</title>
+  </head>
+  <body>
+    <h1>Pedido realizado!</h1>
+    <p>
+      <% if orders.size == 1 %>
+        Seu pedido foi o número <%= orders[0] %>.
+      <% else %>
+        Seus pedidos foram os de número <%= orders[0] %> e <%= orders[1] %>.
+      <% end %>
+      Agora é só aguardar um pouquinho para a felicidade chegar.
+    </p>
+  </body>
+</html>

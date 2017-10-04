@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Lista de pedidos</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Horário do pedido</th>
+        <th>Nome da pessoa</th>
+        <th>Sabor da pizza</th>
+      </tr>
+      <% orders.each do |order| %>
+        <tr>
+          <% order.each do |field| %>
+            <td><%= field %></td>
+          <% end %>
+        </tr>
+      <% end %>
+    </table>
+  </body>
+</html>
